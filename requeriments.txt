@@ -1,0 +1,5 @@
+nes-py
+gym-super-mario-bros
+opencv-python
+matplotlib
+Pillow
