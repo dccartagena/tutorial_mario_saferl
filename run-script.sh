@@ -2,9 +2,8 @@
 #SBATCH --nodes=1
 #SBATCH --tasks-per-node=4
 #SBATCH --time=02:00:00
-#SBATCH --job-name=jupyter
-#SBATCH --mem=8G
-#SBATCH --partition=vulture
+#SBATCH --job-name=rl-mario
+#SBATCH --mem=32G
 
 # Clear the module environment
 module purge
@@ -13,7 +12,7 @@ module purge
 module load Python/3.9.6-GCCcore-11.2.0
 
 # Activate the virtual environment
-source ~/virtual_env/rl-mario/bin/activate
+source $HOME/venvs/rl-mario/bin/activate
 
 # Start the jupyter server, using the hostname of the node as the way to connect to it
 jupyter notebook --no-browser --ip=$( hostname )
