@@ -3,7 +3,7 @@
 #SBATCH --tasks-per-node=4
 #SBATCH --time=02:00:00
 #SBATCH --job-name=rl-mario
-#SBATCH --mem=32G
+#SBATCH --mem=16G
 
 # Clear the module environment
 module purge
